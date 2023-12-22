@@ -1,0 +1,119 @@
+2023-12-20 23:06:36,533 | ERROR | user.py | inject_user | user(id="13C06BD7-B031-4756-8A7A-4BE8B364C8C1") is inserted
+2023-12-20 23:10:50,211 - ERROR - app.py - log_exception - Exception on / [GET]
+Traceback (most recent call last):
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "Q:\Documents\Programs\Python\Water-Quality-Predict-System_Backend\routes\user.py", line 10, in fetch_user
+    print(request.args.__dict__())
+TypeError: 'dict' object is not callable
+2023-12-21 09:56:12,833 - ERROR - app.py - log_exception - Exception on / [GET]
+Traceback (most recent call last):
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "Q:\Documents\Programs\Python\Water-Quality-Predict-System_Backend\routes\user.py", line 19, in fetch_user
+    cursor.excute(sql, params)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\cursors.py", line 378, in __getattr__
+    raise AttributeError(name)
+AttributeError: excute
+2023-12-21 09:57:08,557 - ERROR - app.py - log_exception - Exception on / [GET]
+Traceback (most recent call last):
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "Q:\Documents\Programs\Python\Water-Quality-Predict-System_Backend\routes\user.py", line 20, in fetch_user
+    cursor.excute(sql, params)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\cursors.py", line 378, in __getattr__
+    raise AttributeError(name)
+AttributeError: excute
+2023-12-21 09:57:49,808 - ERROR - app.py - log_exception - Exception on / [GET]
+Traceback (most recent call last):
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "Q:\Documents\Programs\Python\Water-Quality-Predict-System_Backend\routes\user.py", line 19, in fetch_user
+    cursor.execute(sql, params)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\connections.py", line 822, in _read_query_result
+    result.read()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'age' in 'where clause'")
+2023-12-21 14:54:54,808 - ERROR - app.py - log_exception - Exception on / [GET]
+Traceback (most recent call last):
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "Q:\Documents\Programs\Python\Water-Quality-Predict-System_Backend\routes\user.py", line 28, in fetch_user
+    current_app.logger.log("fetch user data")
+TypeError: log() missing 1 required positional argument: 'msg'
+2023-12-21 16:55:39,156 - ERROR - app.py - log_exception - Exception on /sample/predownload/ [POST]
+Traceback (most recent call last):
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'sample.extract_sample_from_predownload' did not return a valid response. The function either returned None or ended without a return statement.
+2023-12-21 18:24:02,311 - ERROR - app.py - log_exception - Exception on /user/login [POST]
+Traceback (most recent call last):
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "Q:\Documents\Programs\Python\Water-Quality-Predict-System_Backend\routes\user.py", line 119, in login
+    request.args.add("name", data.get("name"))
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\werkzeug\datastructures.py", line 168, in add
+    is_immutable(self)
+  File "Q:\Sill-\anaconda\envs\gd-backend\lib\site-packages\werkzeug\datastructures.py", line 18, in is_immutable
+    raise TypeError(f"{type(self).__name__!r} objects are immutable")
+TypeError: 'ImmutableMultiDict' objects are immutable
+2023-12-21 18:53:53,522 - ERROR - user.py - inject_user - sql excute faild when insert user, following error: (1062, "Duplicate entry 'sill' for key 'user.name'")
+2023-12-21 19:24:41,050 - ERROR - user.py - inject_user - sql excute faild when insert user, following error: (1062, "Duplicate entry 'luna' for key 'user.name'")
+2023-12-21 19:25:30,348 - ERROR - user.py - inject_user - sql excute faild when insert user, following error: (1062, "Duplicate entry 'luna' for key 'user.name'")
+2023-12-21 19:32:36,093 - ERROR - user.py - inject_user - sql excute faild when insert user, following error: (1062, "Duplicate entry 'luna' for key 'user.name'")
+2023-12-21 19:33:24,022 - ERROR - user.py - inject_user - sql excute faild when insert user, following error: (1062, "Duplicate entry 'luna' for key 'user.name'")
